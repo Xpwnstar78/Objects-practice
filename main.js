@@ -35,13 +35,13 @@ for (let items = 0; items < recipe.ingredients.length; items++) {
 // and vice versa
 let books = [
   {
-    title: 1984,
-    author: "George Orwell",
+    title: "The Fire Within",
+    author: "Carlos Castaneda",
     readAlready: false,
   },
   {
-    title: "Tarzan",
-    author: "Edgar Rice Burroughs",
+    title: "The Teachings of Don Juan",
+    author: "Carlos Castaneda",
     readAlready: true,
   },
 ];
