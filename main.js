@@ -10,7 +10,17 @@
 // cinnamon
 // cumin
 // cocoa
-
+const recipe = {
+  title: "Mole",
+  Serves: 2,
+  ingredients: ["cinnamon", "cumin", "cocoa"],
+};
+console.log(recipe.title);
+console.log(`Serves:${recipe.Serves}`);
+console.log("Ingredients: ");
+for (let items = 0; items < recipe.ingredients.length; items++) {
+  console.log(recipe.ingredients[items]);
+}
 
 
 
@@ -23,7 +33,27 @@
 // Now use an if/else statement to change the output depending on whether you read it
 // or not. If you read it, log a string like "You already read "1984" by George Orwell"
 // and vice versa
-
+let books = [
+  {
+    title: 1984,
+    author: "George Orwell",
+    readAlready: false,
+  },
+  {
+    title: "Tarzan",
+    author: "Edgar Rice Burroughs",
+    readAlready: true,
+  },
+];
+for (let i = 0; i < books.length; i++) {
+  let book = books[i];
+  let details = `${book.title} by ${book.author}`;
+  if (book.readAlready) {
+    console.log(`I have read ${details}.`);
+  } else {
+    console.log(`I have not read ${details}.`);
+  }
+}
 
 
 //Exercise #3
@@ -41,7 +71,17 @@
 // Print the release year
 // Maybe your favorite came with an extended cut, including deleted scenes. 
 // Write a statement that increases your movie object's duration by 30 minutes. 
-
+const favMovie = {
+  title: 'Natural Born Killers',
+  director: 'Olover Stone',
+  actors: ['Woody Harrelson', 'Julliet Lewis', 'Robert Downey Jr.'],
+  releasedIn: 1994,
+  duration: 122
+}
+console.log(favMovie.title)
+console.log(favMovie.director)
+console.log(favMovie.releaseYear)
+console.log(`The director's cut is ${favMovie.duration + 45} minutes long`)
 
 
 
